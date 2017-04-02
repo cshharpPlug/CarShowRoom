@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarShowRoom.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,37 @@ namespace CarShowRoom
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void dataGrid_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+            e.Column.Width = new DataGridLength(1, DataGridLengthUnitType.Star);
+        } 
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Car_Model_Click(object sender, RoutedEventArgs e)
+        {
+            using (var context = new Context())
+            {
+                context.CarModels.Add(new CarModel()
+                {
+                    CarModelName = "X5", 
+                    BodyType = "BMW type"
+                });
+                context.CarModels.Add(new CarModel()
+                {
+                    CarModelName = "X6",
+                    BodyType = "BMW another type"
+                });
+                context.SaveChanges();
+                var carModels = context.CarModels.ToList();
+                dataGrid.ItemsSource = carModels;
+            } 
+           
         }
     }
 }
