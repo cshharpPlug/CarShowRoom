@@ -15,7 +15,7 @@
         <Button x:Name="button"
                 Width="80"
                 Height="53"
-                Margin="182,256,0,0"
+                Margin="427,256,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Button" />
