@@ -10,6 +10,13 @@ namespace CarShowRoom
         {
         } 
 
-        public DbSet<CarModel> CarModels { get; set; }
+        public DbSet<Car> CarModels { get; set; }
+        public DbSet<Log> Logs { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<Context>(null);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
