@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace CarShowRoom.Models
 {
-    public class Car
+    public class Cars
     { 
         public int Id { get; set; } 
         public string CarBrand { get; set; }
@@ -23,6 +23,6 @@ namespace CarShowRoom.Models
         public string ProducingCountry { get; set; } 
         public DateTime ProductionYear { get; set; }
         public string BodyType { get; set; } 
-        public double Price { get; set; }
+        public double? Price { get; set; }
     }
 }

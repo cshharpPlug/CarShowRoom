@@ -11,7 +11,7 @@ namespace CarShowRoom.Migrations
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = false;
-            ContextKey = "CarShowRoom.Context";
+            ContextKey = "CarShowRoom";
         }
 
         protected override void Seed(CarShowRoom.Context context)

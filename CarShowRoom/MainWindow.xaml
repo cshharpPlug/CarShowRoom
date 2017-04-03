@@ -12,13 +12,17 @@
         WindowStyle="ToolWindow"
         mc:Ignorable="d">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
         <Button x:Name="button"
                 Width="80"
                 Height="53"
                 Margin="427,256,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="Button" />
+                Content="Button" Grid.ColumnSpan="2" />
         <Button x:Name="Car_Model"
                 Width="167"
                 Height="53"
@@ -52,7 +56,7 @@
                   RowBackground="MistyRose"
                   SelectionMode="Single"
                   VerticalGridLinesBrush="Crimson"
-                  VerticalScrollBarVisibility="Visible">
+                  VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="2">
             <DataGrid.Effect>
                 <DropShadowEffect BlurRadius="100" Color="#FFECF036" />
             </DataGrid.Effect>

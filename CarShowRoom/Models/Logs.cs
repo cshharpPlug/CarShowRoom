@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShowRoom.Models
 {
-    public class Log
+    public class Logs
     {
         public int Id { get; set; }
         public int IdCar { get; set; }

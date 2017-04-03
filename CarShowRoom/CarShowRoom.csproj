@@ -94,8 +94,8 @@
       <DependentUpon>201704031559160_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Car.cs" />
-    <Compile Include="Models\Log.cs" />
+    <Compile Include="Models\Cars.cs" />
+    <Compile Include="Models\Logs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
