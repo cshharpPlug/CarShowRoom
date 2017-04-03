@@ -23,6 +23,6 @@ namespace CarShowRoom.Models
         public string ProducingCountry { get; set; } 
         public DateTime ProductionYear { get; set; }
         public string BodyType { get; set; } 
-        public double? Price { get; set; }
+        public double Price { get; set; }
     }
 }

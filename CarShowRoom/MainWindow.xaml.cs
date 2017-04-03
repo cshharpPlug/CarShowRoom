@@ -47,7 +47,7 @@ namespace CarShowRoom
                     BodyType = "BMW type",
                     ProducingCountry = "Germany",
                     ProductionYear = new DateTime(1995,03,12),
-                    //Price = 78960.1
+                    Price = 78960.1
                 });
                 context.CarModels.Add(new Cars()
                 {
@@ -56,7 +56,7 @@ namespace CarShowRoom
                     BodyType = "BMW another type",
                     ProducingCountry = "Germany",
                     ProductionYear = new DateTime(1998, 05, 24),
-                    //Price = 123960.1
+                    Price = 123960.1
                 });
                 context.SaveChanges();
                 var carModels = context.CarModels.ToList();
